@@ -4,7 +4,7 @@
 # =========================================
 # setup ros2 environment
 source "/opt/ros/humble/setup.bash" --
-source ~/ros2_ws/install/setup.bash
+source ~/ros2_ws_forpc/install/setup.bash
 
 # --------------------------
 # 1️⃣ 실행 중인 관련 ROS2 노드 종료
