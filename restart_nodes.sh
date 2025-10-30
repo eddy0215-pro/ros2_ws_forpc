@@ -3,7 +3,7 @@
 # ROS2 노드 종료 후 재실행 스크립트
 # =========================================
 # setup ros2 environment
-source "/opt/ros/$ROS_DISTRO/setup.bash" --
+source "/opt/ros/humble/setup.bash" --
 source ~/ros2_ws/install/setup.bash
 
 # --------------------------
