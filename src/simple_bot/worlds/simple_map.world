@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <world name="simple_map_world">
+
+    <!-- 조명 -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- 평면 (바닥) -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- 경기장 PNG 배경 -->
+    <model name="arena_map">
+      <static>true</static>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>9.6 7.2</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <!-- material 파일 경로 -->
+              <uri>file:///home/pi/ros2_ws_forpc/Map/aMAP.material</uri>
+              <name>ArenaMap</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+            <specular>0 0 0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>9.6 7.2</size>
+            </plane>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    
+  </world>
+</sdf>

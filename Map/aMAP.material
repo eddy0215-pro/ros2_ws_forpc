@@ -1,0 +1,13 @@
+material ArenaMap
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture aMAP.png
+      }
+    }
+  }
+}
