@@ -1,165 +1,144 @@
 <?xml version="1.0"?>
 <robot name="simple_bot" xmlns:xacro="http://www.ros.org/wiki/xacro">
-  <material name="gray">
-  <color rgba="0.5 0.5 0.5 1"/>
-  </material>
-  <material name="black">
-    <color rgba="0 0 0 1"/>
-  </material>
-  <material name="blue">
-    <color rgba="0 0 1 1"/>
-  </material>
-  <material name="red">
-    <color rgba="1 0 0 1"/>
-  </material>
 
-  <!-- 기본 몸체 -->
+  <!-- 기본 파라미터 -->
+  <xacro:property name="wheel_radius" value="0.033"/>
+  <xacro:property name="wheel_width" value="0.025"/>
+  <xacro:property name="body_length" value="0.125"/> <!-- X-axis length: 12.5 cm -->
+  <xacro:property name="body_width"  value="0.115"/> <!-- Y-axis width: 11.5 cm -->
+  <xacro:property name="body_height" value="0.08"/>  <!-- Z-axis height: 8 cm -->
+  <xacro:property name="wheel_base" value="0.08"/> <!-- 앞뒤 바퀴 간격 -->
+
+  <!-- ===================== base_link ===================== -->
   <link name="base_link">
     <visual>
       <geometry>
-        <box size="0.3 0.2 0.1"/>
+        <box size="${body_length} ${body_width} ${body_height}"/>
       </geometry>
-      <material name="gray"/>
+      <origin xyz="0 0 ${body_height/2}" rpy="0 0 0"/>
+      <material name="Gray">
+        <color rgba="0.6 0.6 0.6 1.0"/>
+      </material>
     </visual>
+    <collision>
+      <geometry>
+        <box size="${body_length} ${body_width} ${body_height}"/>
+      </geometry>
+    </collision>
   </link>
 
-  <!-- 왼쪽 바퀴 -->
-  <link name="left_wheel">
+  <!-- ===================== Left Wheels ===================== -->
+  <!-- Left Front Wheel -->
+  <link name="left_front_wheel_link">
     <visual>
       <geometry>
-        <cylinder length="0.03" radius="0.05"/>
+        <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
       </geometry>
-      <material name="black"/>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <material name="Black">
+        <color rgba="0 0 0 1"/>
+      </material>
     </visual>
   </link>
+  <joint name="left_front_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="left_front_wheel_link"/>
+    <origin xyz="${wheel_base/2} ${body_width/2 + wheel_width/2} ${wheel_radius}" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
 
-  <!-- 오른쪽 바퀴 -->
-  <link name="right_wheel">
+  <!-- Left Rear Wheel -->
+  <link name="left_rear_wheel_link">
     <visual>
       <geometry>
-        <cylinder length="0.03" radius="0.05"/>
+        <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
       </geometry>
-      <material name="black"/>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <material name="Black">
+        <color rgba="0 0 0 1"/>
+      </material>
     </visual>
   </link>
+  <joint name="left_rear_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="left_rear_wheel_link"/>
+    <origin xyz="-${wheel_base/2} ${body_width/2 + wheel_width/2} ${wheel_radius}" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
 
-  <!-- 카메라 -->
-  <link name="camera_link">
+  <!-- ===================== Right Wheels ===================== -->
+  <!-- Right Front Wheel -->
+  <link name="right_front_wheel_link">
     <visual>
       <geometry>
-        <box size="0.04 0.04 0.04"/>
+        <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
       </geometry>
-      <material name="blue"/>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <material name="Black">
+        <color rgba="0 0 0 1"/>
+      </material>
     </visual>
   </link>
+  <joint name="right_front_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="right_front_wheel_link"/>
+    <origin xyz="${wheel_base/2} -${body_width/2 + wheel_width/2} ${wheel_radius}" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
 
-  <!-- 초음파 센서 -->
+  <!-- Right Rear Wheel -->
+  <link name="right_rear_wheel_link">
+    <visual>
+      <geometry>
+        <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <material name="Black">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+  </link>
+  <joint name="right_rear_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="right_rear_wheel_link"/>
+    <origin xyz="-${wheel_base/2} -${body_width/2 + wheel_width/2} ${wheel_radius}" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <!-- ===================== Ultrasonic Sensor ===================== -->
   <link name="ultrasonic_link">
     <visual>
       <geometry>
-        <cylinder length="0.02" radius="0.02"/>
+        <box size="0.02 0.05 0.02"/>
       </geometry>
-      <material name="red"/>
+      <origin xyz="${(body_length/2) + 0.01} 0 ${body_height/4}" rpy="0 0 0"/>
+      <material name="Yellow">
+        <color rgba="1.0 1.0 0.0 1.0"/>
+      </material>
     </visual>
   </link>
-
-  <!-- 조인트 -->
-  <joint name="left_wheel_joint" type="continuous">
+  <joint name="ultrasonic_link" type="fixed">
     <parent link="base_link"/>
-    <child link="left_wheel"/>
-    <origin xyz="0 0.12 0"/>
-    <axis xyz="0 1 0"/>
+    <child link="ultrasonic_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
   </joint>
 
-  <joint name="right_wheel_joint" type="continuous">
-    <parent link="base_link"/>
-    <child link="right_wheel"/>
-    <origin xyz="0 -0.12 0"/>
-    <axis xyz="0 1 0"/>
-  </joint>
-
+  <!-- ===================== Camera ===================== -->
+  <link name="camera_link">
+    <visual>
+      <geometry>
+        <box size="0.02 0.05 0.04"/>
+      </geometry>
+      <origin xyz="${(body_length/2) + 0.01} 0 ${body_height*0.7}" rpy="0 0 0"/>
+      <material name="Red">
+        <color rgba="1.0 0.0 0.0 1.0"/>
+      </material>
+    </visual>
+  </link>
   <joint name="camera_joint" type="fixed">
     <parent link="base_link"/>
     <child link="camera_link"/>
-    <origin xyz="0.1 0 0.1"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
   </joint>
-
-  <joint name="ultrasonic_joint" type="fixed">
-    <parent link="base_link"/>
-    <child link="ultrasonic_link"/>
-    <origin xyz="0.15 0 0.05"/>
-  </joint>
-
-  <!-- Gazebo 플러그인: 차륜 구동 -->
-  <gazebo>
-    <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
-      <ros>
-        <namespace>/simple_bot</namespace>
-      </ros>
-      <update_rate>50.0</update_rate>
-      <left_joint>left_wheel_joint</left_joint>
-      <right_joint>right_wheel_joint</right_joint>
-      <wheel_separation>0.24</wheel_separation>
-      <wheel_diameter>0.1</wheel_diameter>
-      <command_topic>cmd_vel</command_topic>
-      <odometry_topic>odom</odometry_topic>
-      <publish_odom>true</publish_odom>
-    </plugin>
-  </gazebo>
-
-  <!-- Gazebo 카메라 -->
-  <gazebo reference="camera_link">
-    <sensor type="camera" name="camera_sensor">
-      <update_rate>30.0</update_rate>
-      <camera name="head_camera">
-        <horizontal_fov>1.3962634</horizontal_fov>
-        <image>
-          <width>640</width>
-          <height>480</height>
-          <format>R8G8B8</format>
-        </image>
-        <clip>
-          <near>0.05</near>
-          <far>50</far>
-        </clip>
-      </camera>
-      <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
-        <ros>
-          <namespace>/simple_bot</namespace>
-          <argument>camera_info_url</argument>
-        </ros>
-        <camera_name>camera</camera_name>
-        <frame_name>camera_link</frame_name>
-      </plugin>
-    </sensor>
-  </gazebo>
-
-  <!-- Gazebo 초음파 -->
-  <gazebo reference="ultrasonic_link">
-    <sensor type="ray" name="ultrasonic_sensor">
-      <update_rate>10.0</update_rate>
-      <ray>
-        <scan>
-          <horizontal>
-            <samples>5</samples>
-            <resolution>1</resolution>
-            <min_angle>-0.1</min_angle>
-            <max_angle>0.1</max_angle>
-          </horizontal>
-        </scan>
-        <range>
-          <min>0.02</min>
-          <max>2.0</max>
-          <resolution>0.01</resolution>
-        </range>
-      </ray>
-      <plugin name="ultrasonic_controller" filename="libgazebo_ros_ray_sensor.so">
-        <ros>
-          <namespace>/simple_bot</namespace>
-        </ros>
-        <frame_name>ultrasonic_link</frame_name>
-      </plugin>
-    </sensor>
-  </gazebo>
 
 </robot>
