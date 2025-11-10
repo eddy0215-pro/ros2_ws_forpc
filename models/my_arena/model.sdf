@@ -1,0 +1,31 @@
+ <?xml version="1.0"?>
+ <sdf version="1.4">
+ <model name="my_ground_plane">
+    <static>true</static>
+      <link name="link">
+        <visual name="visual">
+          <pose>0 0 0 1.5708 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://my_arena/meshes/arena.obj</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://my_arena/materials/scripts/arena.material</uri>
+              <name>MyArena/Material</name>
+            </script>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <pose>0 0 0 1.5708 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://my_arena/meshes/arena_collision.obj</uri>
+            </mesh>
+          </geometry>
+        </collision>
+     </link>
+   </model>
+ </sdf>

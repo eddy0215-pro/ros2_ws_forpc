@@ -45,6 +45,10 @@
         </collision>
       </link>
     </model>
-    
+    <include>
+      <uri>model://simple_bot</uri>
+      <name>simple_bot</name>
+      <pose>0 0 0.1 0 0 0</pose>
+    </include>
   </world>
 </sdf>

@@ -1,0 +1,13 @@
+material MyArena/Material
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture ../textures/arena.png
+            }
+        }
+    }
+}

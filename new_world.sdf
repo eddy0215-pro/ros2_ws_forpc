@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+  <world name="new_world">
+
+    <!-- 태양 추가 -->
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Sun</uri>
+    </include>
+
+    <!-- 내가 만든 바닥 불러오기 -->
+    <include>
+      <uri>model://my_arena</uri>
+    </include>
+
+  </world>
+</sdf>
