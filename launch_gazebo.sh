@@ -4,7 +4,7 @@
 # ===========================================
 
 # 경로 설정
-WORLD_PATH="/home/pi/ros2_ws_forpc/src/simple_bot/worlds/simple_map.world"
+WORLD_PATH="/home/pi/ros2_ws_forpc/new_world.sdf"
 SDF_PATH="/home/pi/ros2_ws_forpc/src/simple_bot/urdf/simple_bot.sdf"
 
 # ROS2 환경 로드

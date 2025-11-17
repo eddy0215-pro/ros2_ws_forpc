@@ -1,6 +1,18 @@
 <?xml version="1.0"?>
 <sdf version="1.9">
-  <world name="simple_map_world">
+  <world name="simple_map_world">+
+    <plugin
+      filename="gz-sim-physics-system"
+      name="gz::sim::systems::Physics">
+    </plugin>
+    <plugin
+      filename="gz-sim-user-commands-system"
+      name="gz::sim::systems::UserCommands">
+    </plugin>
+    <plugin
+      filename="gz-sim-scene-broadcaster-system"
+      name="gz::sim::systems::SceneBroadcaster">
+    </plugin>
 
     <!-- 🌞 조명 -->
     <light type="directional" name="sun">

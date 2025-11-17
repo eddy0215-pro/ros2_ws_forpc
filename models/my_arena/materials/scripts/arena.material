@@ -6,7 +6,7 @@ material MyArena/Material
         {
             texture_unit
             {
-                texture ../textures/arena.png
+                texture model://my_arena/materials/textures/arena.png
             }
         }
     }

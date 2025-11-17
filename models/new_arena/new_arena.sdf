@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='AL301'>
+    <link name='link'>
+      <!-- Visual -->
+      <visual name='visual'>
+        <geometry>
+          <mesh>
+            <uri>model://new_arena/arena.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <!-- Collision -->
+      <collision name='collision'>
+        <geometry>
+          <mesh>
+            <uri>model://new_arena/arena.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+    </link>
+  </model>
+</sdf>

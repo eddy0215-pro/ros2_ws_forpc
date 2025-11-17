@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="arena_world">
+
+    <!-- 기본 물리 -->
+    <physics type="ode">
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <!-- 🌞 조명 -->
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+          <range>1000</range>
+          <constant>0.9</constant>
+          <linear>0.01</linear>
+          <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <!-- 🏞️ 평면 (기본 바닥) -->
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Ground Plane</uri>
+    </include>
+
+    <!-- 👉 여기에서 arena.sdf 모델 가져옴 -->
+    <include>
+      <uri>model://new_arena</uri>
+      <pose>0 0 0.01 0 0 0</pose>
+    </include>
+
+    <!-- 🤖 simple_bot 로봇 -->
+    <include>
+      <uri>model://simple_bot</uri>
+      <name>simple_bot</name>
+      <pose>0 0 0.1 0 0 0</pose>
+    </include>
+
+  </world>
+</sdf>
