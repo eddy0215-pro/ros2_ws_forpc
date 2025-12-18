@@ -1,16 +1,48 @@
 <?xml version="1.0" ?>
 <sdf version="1.7">
   <world name="simple_map_world">
+    <!-- 직접 정의한 조명 -->
+    <light name="my_light" type="directional">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 -0.5 0</pose>
+      <diffuse>1 1 1 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>100</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0 -1</direction>
+    </light>
 
-    <!-- 조명 -->
-    <include>
-      <uri>model://sun</uri>
-    </include>
-
-    <!-- 평면 (바닥) -->
-    <include>
-      <uri>model://ground_plane</uri>
-    </include>
+    <!-- 커스텀 바닥 평면 -->
+    <model name="custom_ground">
+      <static>true</static>
+      <link name="ground_link">
+        <collision name="ground_collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>20 20</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="ground_visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>20 20</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.6 0.6 0.6 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
 
     <!-- 경기장 PNG 배경 -->
     <model name="arena_map">

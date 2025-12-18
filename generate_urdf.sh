@@ -23,7 +23,7 @@ ros2 run xacro xacro $XACRO_FILE -o $URDF_FILE
 
 # 2️⃣ URDF → SDF
 gz sdf -p "$URDF_FILE" > "$SDF_FILE"
-mv "$SDF_FILE" "$URDF_DIR/simple_bot/model.sdf"
+cp "$SDF_FILE" "$URDF_DIR/simple_bot/model.sdf"
 
 # model.config 생성
 cat <<EOF > "$URDF_DIR/simple_bot/model.config"
