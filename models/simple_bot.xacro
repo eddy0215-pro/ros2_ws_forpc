@@ -36,6 +36,17 @@
       <origin xyz="0 0 ${wheel_radius + body_height/2}" rpy="0 0 0"/>
     </collision>
   </link>
+  
+  <!-- ===================== Wheels ===================== -->
+  <!-- odom 프레임 정의 -->
+    <link name="odom"/>
+
+  <!-- odom → base_link 변환 -->
+  <joint name="odom_to_base" type="fixed">
+    <parent link="odom"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
 
   <!-- ===================== Wheels ===================== -->
   <xacro:macro name="wheel_link" params="wheel_name x y">
@@ -76,6 +87,54 @@
   <xacro:wheel_link wheel_name="right_front_wheel" x="${wheel_base/2}" y="-${body_width/2 + wheel_width/2}"/>
   <xacro:wheel_link wheel_name="right_rear_wheel" x="-${wheel_base/2}" y="-${body_width/2 + wheel_width/2}"/>
 
+  <!-- ===================== ros2_control ===================== -->
+  <ros2_control name="GazeboSystem" type="system">
+    <hardware>
+      <plugin>gz_ros2_control/GazeboSystem</plugin>
+    </hardware>
+
+    <!-- 각 바퀴 joint 정의 -->
+    <joint name="left_front_wheel_joint">
+      <command_interfaces>
+        <interface>velocity</interface>
+      </command_interfaces>
+      <state_interfaces>
+        <interface>position</interface>
+        <interface>velocity</interface>
+      </state_interfaces>
+    </joint>
+
+    <joint name="left_rear_wheel_joint">
+      <command_interfaces>
+        <interface>velocity</interface>
+      </command_interfaces>
+      <state_interfaces>
+        <interface>position</interface>
+        <interface>velocity</interface>
+      </state_interfaces>
+    </joint>
+
+    <joint name="right_front_wheel_joint">
+      <command_interfaces>
+        <interface>velocity</interface>
+      </command_interfaces>
+      <state_interfaces>
+        <interface>position</interface>
+        <interface>velocity</interface>
+      </state_interfaces>
+    </joint>
+
+    <joint name="right_rear_wheel_joint">
+      <command_interfaces>
+        <interface>velocity</interface>
+      </command_interfaces>
+      <state_interfaces>
+        <interface>position</interface>
+        <interface>velocity</interface>
+      </state_interfaces>
+    </joint>
+  </ros2_control>
+
   <!-- ===================== Ultrasonic Sensor ===================== -->
   <link name="ultrasonic_link">
     <visual>
@@ -109,17 +168,7 @@
     <child link="camera_link"/>
     <origin xyz="${(body_length/2) + 0.01} 0 ${body_height*0.7 + 0.02}" rpy="0 0 0"/>
   </joint>
-
-  <!-- ros2_control plugin for Ignition Gazebo -->
-  <gazebo>
-    <!-- Gazebo 플러그인 정의 -->
-    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
-      <ros2_control>
-        <joint name="left_front_wheel_joint"/>
-        <joint name="right_front_wheel_joint"/>
-        <joint name="left_rear_wheel_joint"/>
-        <joint name="right_rear_wheel_joint"/>
-      </ros2_control>
-    </plugin>
-  </gazebo>
+  <plugin name="gz_ros2_control" filename="libgz_ros2_control-system.so">
+    <parameters>/home/pi/ros2_ws_forpc/config/diff_drive_controller.yaml</parameters>
+  </plugin>
 </robot>

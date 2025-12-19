@@ -1,6 +1,6 @@
 <sdf version='1.7'>
   <model name='simple_bot'>
-    <link name='base_link'>
+    <link name='odom'>
       <inertial>
         <pose>0 0 0 0 -0 0</pose>
         <mass>1</mass>
@@ -13,7 +13,7 @@
           <izz>0.001</izz>
         </inertia>
       </inertial>
-      <collision name='base_link_collision'>
+      <collision name='odom_fixed_joint_lump__base_link_collision'>
         <pose>0 0 0.073 0 -0 0</pose>
         <geometry>
           <box>
@@ -21,7 +21,7 @@
           </box>
         </geometry>
       </collision>
-      <visual name='base_link_visual'>
+      <visual name='odom_fixed_joint_lump__base_link_visual'>
         <pose>0 0 0.073 0 -0 0</pose>
         <geometry>
           <box>
@@ -29,7 +29,7 @@
           </box>
         </geometry>
       </visual>
-      <visual name='base_link_fixed_joint_lump__camera_link_visual_1'>
+      <visual name='odom_fixed_joint_lump__camera_link_visual_1'>
         <pose>0.0725 0 0.076 0 -0 0</pose>
         <geometry>
           <box>
@@ -37,7 +37,7 @@
           </box>
         </geometry>
       </visual>
-      <visual name='base_link_fixed_joint_lump__ultrasonic_link_visual_2'>
+      <visual name='odom_fixed_joint_lump__ultrasonic_link_visual_2'>
         <pose>0.0725 0 0.04 0 -0 0</pose>
         <geometry>
           <box>
@@ -47,8 +47,8 @@
       </visual>
     </link>
     <joint name='left_front_wheel_joint' type='revolute'>
-      <pose relative_to='base_link'>0.04 0.07 0.033 0 -0 0</pose>
-      <parent>base_link</parent>
+      <pose relative_to='odom'>0.04 0.07 0.033 0 -0 0</pose>
+      <parent>odom</parent>
       <child>left_front_wheel_link</child>
       <axis>
         <xyz>0 1 0</xyz>
@@ -96,8 +96,8 @@
       </visual>
     </link>
     <joint name='left_rear_wheel_joint' type='revolute'>
-      <pose relative_to='base_link'>-0.04 0.07 0.033 0 -0 0</pose>
-      <parent>base_link</parent>
+      <pose relative_to='odom'>-0.04 0.07 0.033 0 -0 0</pose>
+      <parent>odom</parent>
       <child>left_rear_wheel_link</child>
       <axis>
         <xyz>0 1 0</xyz>
@@ -145,8 +145,8 @@
       </visual>
     </link>
     <joint name='right_front_wheel_joint' type='revolute'>
-      <pose relative_to='base_link'>0.04 -0.07 0.033 0 -0 0</pose>
-      <parent>base_link</parent>
+      <pose relative_to='odom'>0.04 -0.07 0.033 0 -0 0</pose>
+      <parent>odom</parent>
       <child>right_front_wheel_link</child>
       <axis>
         <xyz>0 1 0</xyz>
@@ -194,8 +194,8 @@
       </visual>
     </link>
     <joint name='right_rear_wheel_joint' type='revolute'>
-      <pose relative_to='base_link'>-0.04 -0.07 0.033 0 -0 0</pose>
-      <parent>base_link</parent>
+      <pose relative_to='odom'>-0.04 -0.07 0.033 0 -0 0</pose>
+      <parent>odom</parent>
       <child>right_rear_wheel_link</child>
       <axis>
         <xyz>0 1 0</xyz>
@@ -242,14 +242,5 @@
         </geometry>
       </visual>
     </link>
-    <static>0</static>
-    <plugin name='gazebo_ros2_control' filename='libgazebo_ros2_control.so'>
-      <ros2_control>
-        <joint name='left_front_wheel_joint'/>
-        <joint name='right_front_wheel_joint'/>
-        <joint name='left_rear_wheel_joint'/>
-        <joint name='right_rear_wheel_joint'/>
-      </ros2_control>
-    </plugin>
   </model>
 </sdf>

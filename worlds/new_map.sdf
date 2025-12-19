@@ -1,7 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.9">
   <world name="arena_world">
-
     <!-- 기본 물리 -->
     <physics type="ode">
       <real_time_update_rate>1000</real_time_update_rate>
@@ -32,13 +31,5 @@
       <uri>model://new_arena</uri>
       <pose>0 0 0.01 0 0 0</pose>
     </include>
-
-    <!-- 🤖 simple_bot 로봇 -->
-    <include>
-      <uri>model://simple_bot</uri>
-      <name>simple_bot</name>
-      <pose>0 0 0.1 0 0 0</pose>
-    </include>
-
   </world>
 </sdf>
