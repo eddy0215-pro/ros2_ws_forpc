@@ -34,7 +34,7 @@ def generate_launch_description():
             ' ',
             PathJoinSubstitution(
                 [FindPackageShare('gz_ros2_control_demos'),
-                 'urdf', 'skc_diff_drive.xacro.urdf']
+                 'urdf', 'adeep.xacro.urdf']
             ),
         ]
     )
