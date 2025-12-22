@@ -1,0 +1,1399 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 12/22/25 by USER
+' *****************************************************************************
+Dim swApp As Object
+
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long, longwarnings As Long
+
+Sub main()
+
+Set swApp = Application.SldWorks
+
+swApp.ActivateDoc2 "adeep.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Dim myModelView As Object
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01619974112348331399, 0.04972872793370788913
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.02486436396685394457
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.03315248528913859738
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.03315248528913859738
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.02486436396685394457
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+
+' Roll View
+Dim swModelView As Object
+Set swModelView = Part.ActiveView
+swModelView.RollBy 0
+boolstatus = Part.Extension.SelectByID2("정면", "PLANE", 0, 0, 0, False, 0, Nothing, 0)
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.02486436396685394457
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, -0.03315248528913859738
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.03315248528913859738
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.04144060661142325019
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, -0.04144060661142325019
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, -0.03315248528913859738
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.02486436396685394457
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.04144060661142325019
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.03315248528913859738
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, -0.02486436396685394457
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.03315248528913859738
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.03315248528913859738
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.04144060661142325019
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.03315248528913859738
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, -0.04144060661142325019
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.03315248528913859738
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.03315248528913859738
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02486436396685394457
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02486436396685394457
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+
+' Roll View
+Set swModelView = Part.ActiveView
+swModelView.RollBy 0
+Part.ClearSelection2 True
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+
+' Roll View
+Set swModelView = Part.ActiveView
+swModelView.RollBy 0
+
+' Save
+Dim swErrors As Long
+Dim swWarnings As Long
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+boolstatus = Part.Extension.SelectByID2("frame-2@adeep", "COMPONENT", -0.01299223896972989678, 0.07999999999998408384, 0.01223847804641309267, True, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("frame-2@adeep", "COMPONENT", 0, 0, 0, True, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("camera-3@adeep", "COMPONENT", 0.02499999999997726263, 0.06609250186045301234, 0.08053695669451599315, True, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("ultrasonic-4@adeep", "COMPONENT", -0.01379428090024248377, 0.01985389195831999132, 0.08249999999998181011, True, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("wheel-6@adeep", "COMPONENT", 0.06656118340868033556, 0.01107195473721844792, 0.06776538509484453243, True, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("wheel-3@adeep", "COMPONENT", 0.08250000000003865352, 0.0321929617114165012, -0.0133831297259234816, True, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("wheel-8@adeep", "COMPONENT", -0.07666186543133335363, 0.003522659790746729414, 0.06593979091252322178, True, 0, Nothing, 0)
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.004049935280870828498, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.03315248528913859738
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.04144060661142325019
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.03315248528913859738
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.05801684925599254194
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.06630497057827719476
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.07459309190056184757
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.05801684925599254194
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.07459309190056184757
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.06630497057827719476
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.05801684925599254194
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.04972872793370788913
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.04144060661142325019
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.03315248528913859738
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.02486436396685394457
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.02486436396685394457
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.02486436396685394457
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.02486436396685394457
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.03315248528913859738
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.03315248528913859738
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+
+' Roll View
+Set swModelView = Part.ActiveView
+swModelView.RollBy 0
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("wheel-7@adeep", "COMPONENT", -0.08249999999986812327, -0.001587432972414148935, -0.03009450302761251805, True, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("ultrasonic-4@adeep", "COMPONENT", 0, 0, 0, True, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("camera-3@adeep", "COMPONENT", 0, 0, 0, True, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("ultrasonic-4@adeep", "COMPONENT", 0, 0, 0, True, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("camera-3@adeep", "COMPONENT", 0, 0, 0, True, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("ultrasonic-4@adeep", "COMPONENT", 0, 0, 0, True, 0, Nothing, 0)
+' MSGBOX
+' 선택에 실패하였습니다.
+
+' MSGBOX
+' 선택에 실패하였습니다.
+
+Part.Insert3DSketch2 True
+Dim skPoint As Object
+Set skPoint = Part.SketchManager.CreatePoint(0.000000, 0.000000, 0.000000)
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", 0, 0, 0, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Set skPoint = Part.SketchManager.CreatePoint(0.000000, 0.000000, 0.000000)
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point3@URDF Reference", "EXTSKETCHPOINT", 0, 0, 0, False, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line1@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 2, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line2@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 4, Nothing, 0)
+boolstatus = Part.InsertCoordinateSystem(False, False, False)
+Part.FixComponent
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", 0, 0, 0, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Set skPoint = Part.SketchManager.CreatePoint(0.000000, 0.040000, 0.072500)
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point7@URDF Reference", "EXTSKETCHPOINT", 0, 0, 0, False, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line3@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 2, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line4@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 4, Nothing, 0)
+boolstatus = Part.InsertCoordinateSystem(False, False, False)
+' MSGBOX
+' 선택에 실패하였습니다.
+
+Part.FixComponent
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", 0, 0, 0, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Set skPoint = Part.SketchManager.CreatePoint(0.000000, 0.010000, 0.072500)
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point11@URDF Reference", "EXTSKETCHPOINT", 0, 0, 0, False, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line5@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 2, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line6@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 4, Nothing, 0)
+boolstatus = Part.InsertCoordinateSystem(False, False, False)
+' MSGBOX
+' 선택에 실패하였습니다.
+
+Part.FixComponent
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", 0, 0, 0, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Set skPoint = Part.SketchManager.CreatePoint(0.057500, 0.015000, 0.035000)
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point15@URDF Reference", "EXTSKETCHPOINT", 0, 0, 0, False, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line7@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 2, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line8@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 4, Nothing, 0)
+boolstatus = Part.InsertCoordinateSystem(False, False, False)
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", 0, 0, 0, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+boolstatus = Part.InsertAxis2(True)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Axis_left_front_wheel_joint", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.FixComponent
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", 0, 0, 0, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Set skPoint = Part.SketchManager.CreatePoint(0.057500, 0.015000, -0.035000)
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point21@URDF Reference", "EXTSKETCHPOINT", 0, 0, 0, False, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line10@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 2, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line11@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 4, Nothing, 0)
+boolstatus = Part.InsertCoordinateSystem(False, False, False)
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", 0, 0, 0, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+boolstatus = Part.InsertAxis2(True)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Axis_left_rear_wheel_joint", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.FixComponent
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", 0, 0, 0, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Set skPoint = Part.SketchManager.CreatePoint(-0.057500, 0.015000, 0.035000)
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point27@URDF Reference", "EXTSKETCHPOINT", 0, 0, 0, False, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line13@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 2, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line14@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 4, Nothing, 0)
+boolstatus = Part.InsertCoordinateSystem(False, False, False)
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", 0, 0, 0, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+boolstatus = Part.InsertAxis2(True)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Axis_right_front_wheel_joint", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.FixComponent
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", 0, 0, 0, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Set skPoint = Part.SketchManager.CreatePoint(-0.057500, 0.015000, -0.035000)
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point33@URDF Reference", "EXTSKETCHPOINT", 0, 0, 0, False, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line16@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 2, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line17@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 4, Nothing, 0)
+boolstatus = Part.InsertCoordinateSystem(False, False, False)
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", 0, 0, 0, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+boolstatus = Part.InsertAxis2(True)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Axis_right_rear_wheel_joint", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("URDF Export Configuration (v1.4)", "ATTRIBUTE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("URDF Export Configuration (v1.4)", "ATTRIBUTE", 0, 0, 0, False, 0, Nothing, 0)
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.ClearSelection2 True
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+boolstatus = Part.Extension.SelectByID2("Origin_global", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.FixComponent
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Origin_camera_joint", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", -0.003020047186823110463, 0.0006139226721238941198, 0.003553792134488586996, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Set skPoint = Part.SketchManager.CreatePoint(0.000000, 0.040000, 0.072500)
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point39@URDF Reference", "EXTSKETCHPOINT", 0, 0, 0, False, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line19@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 2, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line20@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 4, Nothing, 0)
+boolstatus = Part.InsertCoordinateSystem(False, False, False)
+' MSGBOX
+' 선택에 실패하였습니다.
+
+Part.FixComponent
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Origin_ultrasonic_joint", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", -0.003020047186823110463, 0.0006139226721238941198, 0.003553792134488586996, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Set skPoint = Part.SketchManager.CreatePoint(0.000000, 0.010000, 0.072500)
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point40@URDF Reference", "EXTSKETCHPOINT", 0, 0, 0, False, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line21@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 2, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line22@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 4, Nothing, 0)
+boolstatus = Part.InsertCoordinateSystem(False, False, False)
+' MSGBOX
+' 선택에 실패하였습니다.
+
+Part.FixComponent
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Origin_left_front_wheel_joint", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", -0.003020047186823110463, 0.0006139226721238941198, 0.003553792134488586996, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Set skPoint = Part.SketchManager.CreatePoint(0.057500, 0.015000, 0.035000)
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point41@URDF Reference", "EXTSKETCHPOINT", 0, 0, 0, False, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line23@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 2, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line24@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 4, Nothing, 0)
+boolstatus = Part.InsertCoordinateSystem(False, False, False)
+boolstatus = Part.Extension.SelectByID2("Axis_left_front_wheel_joint", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", -0.003020047186823110463, 0.0006139226721238941198, 0.003553792134488586996, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+boolstatus = Part.InsertAxis2(True)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Axis_left_front_wheel_joint2", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.FixComponent
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Origin_left_rear_wheel_joint", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", -0.003020047186823110463, 0.0006139226721238941198, 0.003553792134488586996, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Set skPoint = Part.SketchManager.CreatePoint(0.057500, 0.015000, -0.035000)
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point42@URDF Reference", "EXTSKETCHPOINT", 0, 0, 0, False, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line26@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 2, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line27@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 4, Nothing, 0)
+boolstatus = Part.InsertCoordinateSystem(False, False, False)
+boolstatus = Part.Extension.SelectByID2("Axis_left_rear_wheel_joint", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", -0.003020047186823110463, 0.0006139226721238941198, 0.003553792134488586996, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+boolstatus = Part.InsertAxis2(True)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Axis_left_rear_wheel_joint2", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.FixComponent
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Origin_right_front_wheel_joint", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", -0.003020047186823110463, 0.0006139226721238941198, 0.003553792134488586996, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Set skPoint = Part.SketchManager.CreatePoint(-0.057500, 0.015000, 0.035000)
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point43@URDF Reference", "EXTSKETCHPOINT", 0, 0, 0, False, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line29@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 2, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line30@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 4, Nothing, 0)
+boolstatus = Part.InsertCoordinateSystem(False, False, False)
+boolstatus = Part.Extension.SelectByID2("Axis_right_front_wheel_joint", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", -0.003020047186823110463, 0.0006139226721238941198, 0.003553792134488586996, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+boolstatus = Part.InsertAxis2(True)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Axis_right_front_wheel_joint2", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.FixComponent
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Origin_right_rear_wheel_joint", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", -0.003020047186823110463, 0.0006139226721238941198, 0.003553792134488586996, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Set skPoint = Part.SketchManager.CreatePoint(-0.057500, 0.015000, -0.035000)
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point44@URDF Reference", "EXTSKETCHPOINT", 0, 0, 0, False, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line32@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 2, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line33@URDF Reference", "EXTSKETCHSEGMENT", -0.1422698227790419878, 0.05349105209036508768, -0.1253843299753611973, True, 4, Nothing, 0)
+boolstatus = Part.InsertCoordinateSystem(False, False, False)
+boolstatus = Part.Extension.SelectByID2("Axis_right_rear_wheel_joint", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", -0.003020047186823110463, 0.0006139226721238941198, 0.003553792134488586996, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+boolstatus = Part.InsertAxis2(True)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Axis_right_rear_wheel_joint2", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Origin_global", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Origin_camera_joint", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Origin_ultrasonic_joint", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Axis_left_front_wheel_joint", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Axis_left_rear_wheel_joint", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.0121498058426124881, 0.107745577189700445
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.05801684925599254194
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, 0.05801684925599254194
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.07459309190056184757
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.06630497057827719476
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.05801684925599254194
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, 0.07459309190056184757
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.05801684925599254194
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, 0.05801684925599254194
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.04972872793370788913
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.02486436396685394457
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.02486436396685394457
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.03315248528913859738
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.02486436396685394457
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.02486436396685394457
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.03315248528913859738
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.02486436396685394457
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.03315248528913859738
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.03315248528913859738
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.03315248528913859738
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.02486436396685394457
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.04144060661142325019
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.02486436396685394457
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.0121498058426124881, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.008099870561741656996, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.01657624264456929869
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004049935280870828498, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008288121322284649345
+
+' Roll View
+Set swModelView = Part.ActiveView
+swModelView.RollBy 0
+boolstatus = Part.Extension.SelectByID2("Axis_left_front_wheel_joint", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Axis_left_rear_wheel_joint", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("URDF Export Configuration (v1.4)", "ATTRIBUTE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("URDF Export Configuration (v1.4)", "ATTRIBUTE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("URDF Export Configuration (v1.4)", "ATTRIBUTE", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+boolstatus = Part.Extension.SelectByID2("정면", "PLANE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("URDF Export Configuration (v1.4)", "ATTRIBUTE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("URDF Export Configuration (v1.4)", "ATTRIBUTE", 0, 0, 0, False, 0, Nothing, 0)
+Part.ActivateSelectedFeature
+boolstatus = Part.Extension.SelectByID2("URDF Export Configuration (v1.4)", "ATTRIBUTE", 0, 0, 0, False, 0, Nothing, 0)
+Part.ActivateSelectedFeature
+boolstatus = Part.Extension.SelectByID2("URDF Export Configuration (v1.4)", "ATTRIBUTE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("URDF Export Configuration (v1.4)", "ATTRIBUTE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("URDF Export Configuration (v1.4)", "ATTRIBUTE", 0, 0, 0, False, 0, Nothing, 0)
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+boolstatus = Part.Extension.SelectByID2("Origin_global", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.FixComponent
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Origin_camera_joint", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Origin_camera_joint2", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", -0.0001245951136709944063, 3.404835677087159063e-05, 0.002199780461522430654, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Set skPoint = Part.SketchManager.CreatePoint(0.000000, 0.040000, 0.072500)
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point45@URDF Reference", "EXTSKETCHPOINT", 0, 0, 0, False, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line35@URDF Reference", "EXTSKETCHSEGMENT", -0.2311239358597377003, 0.1251275424824725424, 0, True, 2, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line36@URDF Reference", "EXTSKETCHSEGMENT", -0.2311239358597377003, 0.1251275424824725424, 0, True, 4, Nothing, 0)
+boolstatus = Part.InsertCoordinateSystem(False, False, False)
+' MSGBOX
+' 선택에 실패하였습니다.
+
+Part.FixComponent
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Origin_ultrasonic_joint", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Origin_ultrasonic_joint2", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", -0.0001245951136709944063, 3.404835677087159063e-05, 0.002199780461522430654, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Set skPoint = Part.SketchManager.CreatePoint(0.000000, 0.010000, 0.072500)
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point46@URDF Reference", "EXTSKETCHPOINT", 0, 0, 0, False, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line37@URDF Reference", "EXTSKETCHSEGMENT", -0.2311239358597377003, 0.1251275424824725424, 0, True, 2, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line38@URDF Reference", "EXTSKETCHSEGMENT", -0.2311239358597377003, 0.1251275424824725424, 0, True, 4, Nothing, 0)
+boolstatus = Part.InsertCoordinateSystem(False, False, False)
+' MSGBOX
+' 선택에 실패하였습니다.
+
+Part.FixComponent
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Origin_left_front_wheel_joint", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Origin_left_front_wheel_joint2", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", -0.0001245951136709944063, 3.404835677087159063e-05, 0.002199780461522430654, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Set skPoint = Part.SketchManager.CreatePoint(0.057500, 0.015000, 0.035000)
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point47@URDF Reference", "EXTSKETCHPOINT", 0, 0, 0, False, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line39@URDF Reference", "EXTSKETCHSEGMENT", -0.2311239358597377003, 0.1251275424824725424, 0, True, 2, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line40@URDF Reference", "EXTSKETCHSEGMENT", -0.2311239358597377003, 0.1251275424824725424, 0, True, 4, Nothing, 0)
+boolstatus = Part.InsertCoordinateSystem(False, False, False)
+boolstatus = Part.Extension.SelectByID2("Axis_left_front_wheel_joint", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Axis_left_front_wheel_joint2", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", -0.0001245951136709944063, 3.404835677087159063e-05, 0.002199780461522430654, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+boolstatus = Part.InsertAxis2(True)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Axis_left_front_wheel_joint3", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.FixComponent
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Origin_left_rear_wheel_joint", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Origin_left_rear_wheel_joint2", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", -0.0001245951136709944063, 3.404835677087159063e-05, 0.002199780461522430654, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Set skPoint = Part.SketchManager.CreatePoint(0.057500, 0.015000, -0.035000)
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point48@URDF Reference", "EXTSKETCHPOINT", 0, 0, 0, False, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line42@URDF Reference", "EXTSKETCHSEGMENT", -0.2311239358597377003, 0.1251275424824725424, 0, True, 2, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line43@URDF Reference", "EXTSKETCHSEGMENT", -0.2311239358597377003, 0.1251275424824725424, 0, True, 4, Nothing, 0)
+boolstatus = Part.InsertCoordinateSystem(False, False, False)
+boolstatus = Part.Extension.SelectByID2("Axis_left_rear_wheel_joint", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Axis_left_rear_wheel_joint2", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", -0.0001245951136709944063, 3.404835677087159063e-05, 0.002199780461522430654, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+boolstatus = Part.InsertAxis2(True)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Axis_left_rear_wheel_joint3", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.FixComponent
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Origin_right_front_wheel_joint", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Origin_right_front_wheel_joint2", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", -0.0001245951136709944063, 3.404835677087159063e-05, 0.002199780461522430654, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Set skPoint = Part.SketchManager.CreatePoint(-0.057500, 0.015000, 0.035000)
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point49@URDF Reference", "EXTSKETCHPOINT", 0, 0, 0, False, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line45@URDF Reference", "EXTSKETCHSEGMENT", -0.2311239358597377003, 0.1251275424824725424, 0, True, 2, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line46@URDF Reference", "EXTSKETCHSEGMENT", -0.2311239358597377003, 0.1251275424824725424, 0, True, 4, Nothing, 0)
+boolstatus = Part.InsertCoordinateSystem(False, False, False)
+boolstatus = Part.Extension.SelectByID2("Axis_right_front_wheel_joint", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Axis_right_front_wheel_joint2", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", -0.0001245951136709944063, 3.404835677087159063e-05, 0.002199780461522430654, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+boolstatus = Part.InsertAxis2(True)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Axis_right_front_wheel_joint3", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.FixComponent
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Origin_right_rear_wheel_joint", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Origin_right_rear_wheel_joint2", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", -0.0001245951136709944063, 3.404835677087159063e-05, 0.002199780461522430654, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Set skPoint = Part.SketchManager.CreatePoint(-0.057500, 0.015000, -0.035000)
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point50@URDF Reference", "EXTSKETCHPOINT", 0, 0, 0, False, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line48@URDF Reference", "EXTSKETCHSEGMENT", -0.2311239358597377003, 0.1251275424824725424, 0, True, 2, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line49@URDF Reference", "EXTSKETCHSEGMENT", -0.2311239358597377003, 0.1251275424824725424, 0, True, 4, Nothing, 0)
+boolstatus = Part.InsertCoordinateSystem(False, False, False)
+boolstatus = Part.Extension.SelectByID2("Axis_right_rear_wheel_joint", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Axis_right_rear_wheel_joint2", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' 선택에 실패하였습니다.
+
+boolstatus = Part.Extension.SelectByID2("URDF Reference", "SKETCH", -0.0001245951136709944063, 3.404835677087159063e-05, 0.002199780461522430654, False, 0, Nothing, 0)
+Part.Insert3DSketch2 True
+Part.ClearSelection2 True
+Part.Insert3DSketch2 True
+boolstatus = Part.InsertAxis2(True)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Axis_right_rear_wheel_joint3", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Origin_global", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Origin_left_front_wheel_joint", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Axis_left_front_wheel_joint", "AXIS", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Origin_left_rear_wheel_joint", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Origin_camera_joint2", "COORDSYS", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Axis_right_rear_wheel_joint3", "AXIS", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Origin_right_rear_wheel_joint3", "COORDSYS", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Axis_right_front_wheel_joint3", "AXIS", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Origin_right_front_wheel_joint3", "COORDSYS", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Axis_left_rear_wheel_joint3", "AXIS", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Origin_left_rear_wheel_joint3", "COORDSYS", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Axis_left_front_wheel_joint3", "AXIS", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Origin_left_front_wheel_joint3", "COORDSYS", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Origin_ultrasonic_joint3", "COORDSYS", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Origin_camera_joint3", "COORDSYS", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Axis_right_rear_wheel_joint2", "AXIS", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Origin_right_rear_wheel_joint2", "COORDSYS", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Axis_right_front_wheel_joint2", "AXIS", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Origin_right_front_wheel_joint2", "COORDSYS", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Axis_left_rear_wheel_joint2", "AXIS", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Origin_left_rear_wheel_joint2", "COORDSYS", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Axis_left_front_wheel_joint2", "AXIS", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Origin_left_front_wheel_joint2", "COORDSYS", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Origin_ultrasonic_joint2", "COORDSYS", 0, 0, 0, True, 0, Nothing, 0)
+Part.EditDelete
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000")
+Part.ClearSelection2 True
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+' MSGBOX
+' adeep.SLDASM의 변경 사항을 저장하시겠습니까?
+
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.ClearSelection2 True
+swApp.ExitApp
+End Sub
