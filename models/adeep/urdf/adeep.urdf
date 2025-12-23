@@ -1,0 +1,402 @@
+<?xml version="1.0"?>
+<robot name="diff_drive" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:arg name="namespace" default="" />
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="2.71460280379E-19 1.62518526915536E-18 0.0395704194819336"
+        rpy="0 0 0" />
+      <mass
+        value="1.17010619298297" />
+      <inertia
+        ixx="0.00214835309114068"
+        ixy="4.30133918527574E-20"
+        ixz="-4.79252015080215E-21"
+        iyy="0.00199296884881658"
+        iyz="3.25908935362969E-20"
+        izz="0.00288931099532631" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gz_ros2_control_demos/urdf/adeep/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gz_ros2_control_demos/urdf/adeep/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="camera">
+    <inertial>
+      <origin
+        xyz="1.7830043539703E-19 0.02 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.04" />
+      <inertia
+        ixx="6.66666666666666E-06"
+        ixy="4.97490684354026E-22"
+        ixz="8.06940054417595E-23"
+        iyy="9.66666666666666E-06"
+        iyz="1.76465197344646E-22"
+        izz="1.36666666666667E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gz_ros2_control_demos/urdf/adeep/meshes/camera.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gz_ros2_control_demos/urdf/adeep/meshes/camera.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera_joint"
+    type="fixed">
+    <origin
+      xyz="0 -0.0725 0.04"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="ultrasonic">
+    <inertial>
+      <origin
+        xyz="6.61744490042422E-19 0.01 1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.02" />
+      <inertia
+        ixx="1.33333333333333E-06"
+        ixy="-8.82325986723229E-23"
+        ixz="5.74288338238414E-23"
+        iyy="4.83333333333333E-06"
+        iyz="3.27961644213661E-38"
+        izz="4.83333333333333E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gz_ros2_control_demos/urdf/adeep/meshes/ultrasonic.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gz_ros2_control_demos/urdf/adeep/meshes/ultrasonic.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ultrasonic_joint"
+    type="fixed">
+    <origin
+      xyz="0 -0.0725 0.01"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="ultrasonic" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_front_wheel">
+    <inertial>
+      <origin
+        xyz="-0.0125 1.73472347597681E-17 2.08166817117217E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0805033117482385" />
+      <inertia
+        ixx="4.64101592228595E-05"
+        ixy="-1.01933421967495E-23"
+        ixz="3.04396514226628E-21"
+        iyy="2.73979604316505E-05"
+        iyz="1.6940658945086E-21"
+        izz="2.73979604316505E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gz_ros2_control_demos/urdf/adeep/meshes/left_front_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.203921568627451 0.203921568627451 0.203921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gz_ros2_control_demos/urdf/adeep/meshes/left_front_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_front_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.0575 -0.035 0.015"
+      rpy="2.7498 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_front_wheel" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="left_rear_wheel">
+    <inertial>
+      <origin
+        xyz="0.0125 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0805033117482385" />
+      <inertia
+        ixx="4.64101592228595E-05"
+        ixy="-7.21864153626838E-38"
+        ixz="-3.94802057806275E-37"
+        iyy="2.73979604316505E-05"
+        iyz="-6.14301606978344E-40"
+        izz="2.73979604316505E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gz_ros2_control_demos/urdf/adeep/meshes/left_rear_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.203921568627451 0.203921568627451 0.203921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gz_ros2_control_demos/urdf/adeep/meshes/left_rear_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_rear_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.0575 0.035 0.015"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_rear_wheel" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="right_front_wheel">
+    <inertial>
+      <origin
+        xyz="0.0125 3.46944695195361E-18 2.42861286636753E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0805033117482385" />
+      <inertia
+        ixx="4.64101592228595E-05"
+        ixy="-1.01933421967493E-23"
+        ixz="3.04396514226629E-21"
+        iyy="2.73979604316505E-05"
+        iyz="8.470329472543E-22"
+        izz="2.73979604316505E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gz_ros2_control_demos/urdf/adeep/meshes/right_front_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.203921568627451 0.203921568627451 0.203921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gz_ros2_control_demos/urdf/adeep/meshes/right_front_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_front_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0575 -0.035 0.015"
+      rpy="2.7498 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_front_wheel" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="right_rear_wheel">
+    <inertial>
+      <origin
+        xyz="0.0125 -2.08166817117217E-17 -3.29597460435593E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0805033117482385" />
+      <inertia
+        ixx="4.64101592228595E-05"
+        ixy="-1.01933421967498E-23"
+        ixz="3.04396514226628E-21"
+        iyy="2.73979604316505E-05"
+        iyz="2.5410988417629E-21"
+        izz="2.73979604316505E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gz_ros2_control_demos/urdf/adeep/meshes/right_rear_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.203921568627451 0.203921568627451 0.203921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gz_ros2_control_demos/urdf/adeep/meshes/right_rear_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_rear_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0575 0.035 0.015"
+      rpy="2.74979624140029 0 -3.14159265358979" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_rear_wheel" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  
+  <ros2_control name="GazeboSimSystem" type="system">
+    <hardware>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+    </hardware>
+
+    <joint name="left_front_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="left_rear_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="right_front_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="right_rear_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+
+  <gazebo>
+    <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <ros>
+        <namespace>$(arg namespace)</namespace>
+      </ros>
+      <parameters>$(find gz_ros2_control_demos)/config/diff_drive_controller.yaml</parameters>
+    </plugin>
+  </gazebo>
+</robot>

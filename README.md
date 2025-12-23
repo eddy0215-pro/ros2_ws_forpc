@@ -6,8 +6,5 @@ export LIBGL_ALWAYS_SOFTWARE=1
 
 ## Make New Model
 
-// Go to src and cmd below
-gz model --new simple_bot_name
-
 ## Launch World
-ign gazebo ./worlds/new_map.sdf
+ros2 launch gz_ros2_control_demos diff_drive_skc.launch.py

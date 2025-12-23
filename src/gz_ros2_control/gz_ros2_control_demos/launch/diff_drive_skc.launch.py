@@ -34,7 +34,7 @@ def generate_launch_description():
             ' ',
             PathJoinSubstitution(
                 [FindPackageShare('gz_ros2_control_demos'),
-                 'urdf', 'adeep.xacro.urdf']
+                 'urdf', 'adeep.urdf']
             ),
         ]
     )
@@ -58,8 +58,15 @@ def generate_launch_description():
         package='ros_gz_sim',
         executable='create',
         output='screen',
-        arguments=['-topic', 'robot_description', '-name',
-                   'diff_drive', '-allow_renaming', 'true'],
+        arguments=[
+            '-topic', 'robot_description',
+            '-name', 'diff_drive',
+            '-allow_renaming', 'true',
+            '-x', '1.0',
+            '-y', '2.0',
+            '-z', '0.3',
+            '-Y', '1.57'
+        ],
     )
 
     joint_state_broadcaster_spawner = Node(
