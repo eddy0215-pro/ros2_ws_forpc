@@ -8,3 +8,6 @@ export LIBGL_ALWAYS_SOFTWARE=1
 
 ## Launch World
 ros2 launch gz_ros2_control_demos diff_drive_skc.launch.py
+
+## ign topic list
+ign topic -l
