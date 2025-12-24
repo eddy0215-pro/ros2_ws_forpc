@@ -43,7 +43,7 @@
     </collision>
   </link>
   <link
-    name="camera">
+    name="camera_link">
     <inertial>
       <origin
         xyz="1.7830043539703E-19 0.02 0"
@@ -82,6 +82,7 @@
       </geometry>
     </collision>
   </link>
+
   <joint
     name="camera_joint"
     type="fixed">
@@ -91,12 +92,12 @@
     <parent
       link="base_link" />
     <child
-      link="camera" />
+      link="camera_link" />
     <axis
       xyz="0 0 0" />
   </joint>
   <link
-    name="ultrasonic">
+    name="ultrasonic_link">
     <inertial>
       <origin
         xyz="6.61744490042422E-19 0.01 1.38777878078145E-17"
@@ -135,6 +136,7 @@
       </geometry>
     </collision>
   </link>
+
   <joint
     name="ultrasonic_joint"
     type="fixed">
@@ -144,7 +146,7 @@
     <parent
       link="base_link" />
     <child
-      link="ultrasonic" />
+      link="ultrasonic_link" />
     <axis
       xyz="0 0 0" />
   </joint>
@@ -188,6 +190,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint
     name="left_front_wheel_joint"
     type="continuous">
@@ -390,6 +393,26 @@
       <state_interface name="velocity"/>
     </joint>
   </ros2_control>
+
+  <gazebo reference="camera_link">
+    <sensor type="camera" name="camera_sensor">
+      <update_rate>30</update_rate>
+      <camera>
+        <horizontal_fov>1.047</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>480</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.1</near>
+          <far>100</far>
+        </clip>
+      </camera>
+      <always_on>true</always_on>
+      <visualize>true</visualize>
+    </sensor>
+  </gazebo>
 
   <gazebo>
     <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">

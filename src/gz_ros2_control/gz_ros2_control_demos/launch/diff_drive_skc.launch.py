@@ -51,7 +51,10 @@ def generate_launch_description():
         package='robot_state_publisher',
         executable='robot_state_publisher',
         output='screen',
-        parameters=[robot_description]
+        parameters=[
+            robot_description,
+            {'use_sim_time': True}   # 시뮬레이션 시간 사용
+        ]
     )
 
     gz_spawn_entity = Node(
@@ -92,6 +95,16 @@ def generate_launch_description():
         output='screen'
     )
 
+    camera_bridge = Node(
+        package='ros_gz_bridge',
+        executable='parameter_bridge',
+        arguments=[
+            '/camera_sensor/image@sensor_msgs/msg/Image@gz.msgs.Image',
+            '/camera_sensor/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo'
+        ],
+        output='screen'
+    )
+
     return LaunchDescription([
         # Launch gazebo environment
         IncludeLaunchDescription(
@@ -120,4 +133,5 @@ def generate_launch_description():
             'use_sim_time',
             default_value=use_sim_time,
             description='If true, use simulated clock'),
+        camera_bridge
     ])
